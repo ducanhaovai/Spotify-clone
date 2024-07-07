@@ -1,3 +1,90 @@
 .background-homepage {
-    background: var(--green-normal-hover, #206545);
+
+    opacity: 0.09;
+}
+
+.homepageimg {
+    position: absolute;
+    z-index: 1;
+    background: var(--green-normal-hover, #206545, opacity(0.09));
+    background: linear-gradient(0deg, rgba(15, 73, 43, 0.20) 0%, rgba(15, 73, 43, 0.20) 100%), url(../img/anhdoinui.png) lightgray -37.28px -1532.253px / 103.142% 314.078% no-repeat;
+}
+
+.menu-hambuger {
+    margin-bottom: 0px !important;
+}
+
+.padding-booking {
+    padding: 12px 12px 12px 32px;
+    border-radius: 12px;
+    background: var(--Background-Elevation-White, #FFF);
+}
+
+.text-booking {
+    color: var(--Gray-Scale-50, #727272);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.06px;
+
+}
+
+.text-content {
+    color: var(--Gray-Scale-80, #2E2E2E);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.button-booking {
+    border-radius: 8px;
+    background: var(--Orange-Normal, #E64827);
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+.text-m-booking {
+    color: var(--Gray-Scale-0, #FFF);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%;
+
+
+}
+
+.text-b-booking {
+    color: var(--Gray-Scale-0, #FFF);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%;
+    letter-spacing: 0.14px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.line {
+    width: 34px;
+    height: 1px;
+    transform: rotate(90deg);
+    background-color: var(--Gray-Scale-5, #D9D9D9);
+    padding-left: 24px;
+    padding-right: 24px;
+
+
+}
+
+.text-left-homepage {
+    color: var(--greyscaletext-0, #FFF);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0.15px;
 }

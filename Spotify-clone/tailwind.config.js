@@ -11,6 +11,7 @@ export default {
       },
       height: {
         "49.25rem": "49.25rem",
+        "788px": "788px",
       },
     },
   },

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +10,6 @@
   font-size: 100%;
 }
 
-
-
-.section-1 {
-  background: var(--green-normal-hover, #206545);
+p {
+  margin: 0 !important;
 }

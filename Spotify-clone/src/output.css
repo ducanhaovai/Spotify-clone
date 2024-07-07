@@ -554,28 +554,52 @@ video {
   --tw-contain-style:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .flex {
   display: flex;
 }
 
-.h-14 {
-  height: 3.5rem;
+.h-12 {
+  height: 3rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-788px {
+  height: 788px;
 }
 
 .h-8 {
   height: 2rem;
 }
 
-.w-100rem {
-  width: 100rem;
+.h-full {
+  height: 100%;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-8 {
   width: 2rem;
 }
 
-.max-w-96 {
-  max-width: 24rem;
+.w-full {
+  width: 100%;
 }
 
 .items-center {
@@ -601,6 +625,15 @@ video {
 .bg-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+.bg-homepage {
+  background-image: url('./src/assets/img/anhdoinui.png');
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .px-20 {
@@ -656,8 +689,4 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-}
-
-.section-1 {
-  background: var(--green-normal-hover, #206545);
 }
