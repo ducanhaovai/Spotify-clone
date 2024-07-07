@@ -1,13 +1,24 @@
 .background-homepage {
-
     opacity: 0.09;
 }
 
 .homepageimg {
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:
+        url(../img/anhdoinui.png) lightgray -37.28px -1532.253px / 103.142% 314.078% no-repeat;
+}
+
+
+.bg-filter {
+    background-color: #0f492bd7;
+    height: 100%;
     z-index: 1;
-    background: var(--green-normal-hover, #206545, opacity(0.09));
-    background: linear-gradient(0deg, rgba(15, 73, 43, 0.20) 0%, rgba(15, 73, 43, 0.20) 100%), url(../img/anhdoinui.png) lightgray -37.28px -1532.253px / 103.142% 314.078% no-repeat;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .menu-hambuger {
@@ -36,6 +47,17 @@
     font-style: normal;
     font-weight: 800;
     line-height: 150%;
+}
+
+.bg-image>img {
+    position: absolute;
+    top: 54%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 485px;
+    height: 521px;
+
 }
 
 .button-booking {
@@ -87,4 +109,150 @@
     font-weight: 800;
     line-height: 120%;
     letter-spacing: 0.15px;
+}
+
+.text-cta {
+    color: var(--Gray-Scale-0, #FFF);
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0.5px;
+}
+
+.whatsapp-icon-container img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    left: 19%;
+    bottom: 8%;
+
+}
+
+
+.cta_layout {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    gap: 16px
+}
+
+.whatsapp-icon-container {
+    position: relative;
+    width: 55px;
+    height: 55px;
+
+}
+
+
+
+.icon-whatsapp-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.818);
+    filter: blur(0px);
+    z-index: 2;
+    animation: whatsapp-animation 2s infinite ease-out;
+}
+
+.icon-whatsapp-border2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    border: 3px solid rgba(255, 255, 255, 0.837);
+    filter: blur(0px);
+    z-index: 1;
+    animation: whatsapp-animation 2s infinite ease-out;
+    animation-delay: 1s;
+}
+
+.text-map {
+    color: var(--BACKGROUND-ELEVATION-5, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    opacity: 0.7;
+}
+
+.text-change {
+    text-align: center;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 131.51%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: normal;
+}
+
+
+
+.button-booking {
+    appearance: none;
+    background: var(--Orange-Normal, #E64827);
+    border: 2px solid #E64827;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.button-booking:disabled {
+    pointer-events: none;
+}
+
+.button-booking:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-booking:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+
+@keyframes whatsapp-animation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
 }

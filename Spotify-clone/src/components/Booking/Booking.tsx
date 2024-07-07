@@ -4,7 +4,7 @@ import BookingItem from "./BookingItem/BookingItem";
 
 export default function Booking() {
   return (
-    <div className="inline-flex items-center padding-booking max-w-[886px] gap-8">
+    <div className="inline-flex items-center padding-booking max-w-[886px]  gap-8">
       <div className="flex items-center  absoulute">
         <BookingItem label="DAYS" duration="5 days 4 night" classname="40" />
         <div className="line "></div>
@@ -18,7 +18,7 @@ export default function Booking() {
         <div className="line"></div>
         <BookingItem label="PRIVATE DRIVING" duration="5 pax" classname="32" />
       </div>
-      <div className="flex px-6 flex-col justify-center items-center gap-1 button-booking h-auto ">
+      <div className="flex px-6 flex-col justify-center items-center gap-1 button-booking h-auto button-booking">
         <p className="text-m-booking">$299</p>
         <p className="text-b-booking">BOOK NOW</p>
       </div>

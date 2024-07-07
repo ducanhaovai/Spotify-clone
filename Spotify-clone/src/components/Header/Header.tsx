@@ -1,12 +1,12 @@
 import React from "react";
 import Logo from "../../assets/Logo.png";
 import "../../assets/css/section-1.css";
-
+//con animation nua anh a de em mo cho anh xem
 export default function Header() {
   return (
     <div className="flex py-6 px-20 justify-between items-center ">
-      <img src={Logo} alt="xe" className=" h-12" />
-      <div className="flex pt-2 pr-4 pb-2 pl-2 justify-end gap-2 rounded-lg bg-orange-500">
+      <img src={Logo} alt="xe" className=" h-12 z-10" />
+      <div className="flex pt-2 pr-4 pb-2 pl-2 justify-end gap-2 rounded-3xl bg-orange-500 z-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="33"
@@ -31,7 +31,7 @@ export default function Header() {
             fill="white"
           />
         </svg>
-        <h6 className="text-white text-center font-trip-sans font-bold text-lg leading-relaxed  menu-hambuger w-14 h-6">
+        <h6 className="text-white text-center font-trip-sans font-bold text-lg leading-relaxed  menu-hambuger w-14 h-6  ">
           MENU
         </h6>
       </div>
