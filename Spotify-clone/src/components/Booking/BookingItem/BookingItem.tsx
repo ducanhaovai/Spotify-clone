@@ -9,9 +9,11 @@ interface Props {
 export default function BookingItem({ label, duration, classname }: Props) {
   return (
     <>
-      <div className={`flex flex-col items-start gap-1 w-${classname}`}>
+      <div
+        className={`flex flex-col items-start gap-1 ${classname} max-w-[160px]`}
+      >
         <p className="text-booking whitespace-nowrap">{label}</p>
-        <div className="flex justify-between items-center self-stretch">
+        <div className="flex justify-between items-center self-stretch ">
           <div className="flex items-center gap-2 text-content">{duration}</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"

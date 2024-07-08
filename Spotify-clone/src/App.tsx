@@ -5,7 +5,7 @@ import Section2 from "./Layout/Section2";
 
 function App() {
   return (
-    <div className="max-w-100rem">
+    <div className="">
       <Section1 />
       <Section2 />
     </div>

@@ -1,1 +1,322 @@
-.background-about {}
+@import url('https://fonts.googleapis.com/css2?family=Havana+Sunset&display=swap');
+
+.background-about {
+    background: url(../img/bg-nui.png) #122718 no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 0;
+    background-size: 1670px 642px;
+    background-position: center 250px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.bg-filter-about {
+    background-color: #122718f3;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    text-align: center;
+}
+
+.about-content>h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Londrina Solid";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    opacity: 0.8;
+
+}
+
+.image-container {
+    display: flex;
+    gap: 12px;
+    width: 1048px;
+    height: 200px;
+}
+
+.circle-border {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.circle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.fixed-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 120%;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.circle-rotator {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate 20s infinite linear;
+    pointer-events: none;
+    border: 2px dashed #A9A9A9;
+    border-radius: 50%;
+
+}
+
+
+
+.circle-border:hover {
+    background-color: rgb(230, 72, 39);
+}
+
+.background-detail {
+    background: url('../img/bg2.jfif') #122718 no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.header-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50vh;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-detail {
+    color: #FFF;
+    text-align: center;
+    font-family: "Trip Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0.14px;
+    opacity: 0.9;
+}
+
+.cta-down {
+    width: 49px;
+    height: 49px;
+    margin-top: 20px;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+    margin-left: 50px;
+
+}
+
+.image-section {
+
+    padding: 20px;
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    left: 100%;
+    transition: left 3s ease-in-out;
+}
+
+.image-section.active img {
+    left: 0;
+}
+
+.title {
+    color: var(--greyscaletext-0, #FFF);
+    font-family: "Londrina Solid";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    opacity: 0.9;
+    max-width: 561px;
+}
+
+.content-detail {
+    padding-bottom: 16px;
+    padding-top: 16px;
+    max-width: 621px;
+    color: var(--greyscaletext-10, #C5C5C5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.08px;
+}
+
+.tick-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.USP {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.USP>p {
+    color: var(--greyscaletext-5, #F1F1F1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.button-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.text-section .button-detail .button-detail1,
+.text-section .button-detail .button-detail2 {
+    display: flex;
+    height: 56px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    transition: background-color 0.3s, opacity 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.text-section .button-detail .button-detail1 {
+    background: var(--orange-normal-hover, #DA4B19);
+    color: var(--greyscaletext-0, #FFF);
+}
+
+.text-section .button-detail .button-detail2 {
+    border: 1px solid var(--BACKGROUND-ELEVATION-5, #FFF);
+    opacity: 0.6;
+    color: var(--BACKGROUND-ELEVATION-5, #FFF);
+}
+
+.text-section .button-detail .button-detail1:hover,
+.text-section .button-detail .button-detail2:hover {
+    background-color: var(--greyscaletext-0, #FFF);
+    color: var(--orange-normal-hover, #DA4B19);
+    opacity: 1;
+}
+
+.title-video {
+    text-align: center;
+    gap: 12px;
+}
+
+.content-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.welcome {
+    color: var(--greyscaletext-0, #FFF);
+    font-family: "Trip Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    opacity: 0.4;
+}
+
+.naturally {
+    color: var(--Green-Light, #E9F1ED);
+
+    font-family: "Londrina Solid";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+
+}
+
+.video-detail {
+    max-width: 848px;
+    max-height: 477px;
+    margin-top: 15%;
+}
+
+.title-video .beautiful {}

@@ -8,7 +8,7 @@ import CTA from "../../components/CTA";
 export default function Section1() {
   return (
     <>
-      <div className="homepageimg relative w-full h-788px max-h-[1000px]">
+      <div className="homepageimg relative w-full h-788px max-h-[788px] max-w-100rem section1">
         <Header />
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 pb-8 z-10">
           <Booking />
