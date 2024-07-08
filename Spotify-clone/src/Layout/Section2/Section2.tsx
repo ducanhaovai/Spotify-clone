@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 import "../../assets/css/section-2.css";
 import Logo from "../../assets/img/GroupH.png";
 import CircleItem from "../../components/circle-border/CircleItem";
@@ -7,36 +7,17 @@ import tick from "../../assets/img/tick.png";
 import nui from "../../assets/img/maynui.png";
 import bea from "../../assets/img/beautiful.png";
 import nui2 from "../../assets/img/anhnui2.png";
+import { useInView } from "react-intersection-observer";
 
 const Section2: React.FC = () => {
-  const section1Ref = useRef<HTMLDivElement>(null);
-  const section2Ref = useRef<HTMLDivElement>(null);
-  const [isIntersecting, setIsIntersecting] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsIntersecting(entry.intersectionRatio > 0.5);
-      },
-      {
-        threshold: 0.5, // Khi scroll tới một nửa của Section 2 thì Section 1 sẽ bị che mất
-      }
-    );
-
-    if (section2Ref.current) {
-      observer.observe(section2Ref.current);
-    }
-
-    return () => {
-      if (section2Ref.current) {
-        observer.unobserve(section2Ref.current);
-      }
-    };
-  }, []);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   return (
     <div className="section-container">
-      <div className="background-about relative" ref={section1Ref}>
+      <div className="background-about relative">
         <div className="bg-filter-about"></div>
         <div className="about-content z-10">
           <img src={Logo} className="w-28 h-28 logo-about" alt="Logo" />
@@ -54,7 +35,7 @@ const Section2: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="background-detail" ref={section2Ref}>
+      <div className="background-detail">
         <div className="bg-filter-about"></div>
         <div className="header-detail z-10">
           <div className="center-content">
@@ -124,10 +105,8 @@ const Section2: React.FC = () => {
               </button>
             </div>
           </div>
-          <div
-            className={`image-section z-10 ${isIntersecting ? "active" : ""}`}
-          >
-            <img src={nui} alt="Journey Image" />
+          <div ref={ref} className={`image-section ${inView ? "active" : ""}`}>
+            <img src={nui} alt="Journey Image" className="z-10" />
           </div>
         </div>
         <div className="content-video">
