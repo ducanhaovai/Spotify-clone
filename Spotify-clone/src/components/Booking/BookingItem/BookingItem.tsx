@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../../../assets/css/section-1.css";
 
 interface Props {

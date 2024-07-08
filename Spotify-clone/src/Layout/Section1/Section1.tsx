@@ -1,4 +1,4 @@
-import React from "react";
+
 import Header from "../../components/Header";
 import "../../assets/css/section-1.css";
 import Booking from "../../components/Booking";
