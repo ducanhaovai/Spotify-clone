@@ -1,7 +1,6 @@
-
 import Logo from "../../assets/Logo.png";
 import "../../assets/css/section-1.css";
-//con animation nua anh a de em mo cho anh xem
+
 export default function Header() {
   return (
     <div className="flex py-6 px-20 justify-between items-center ">

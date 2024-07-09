@@ -7,7 +7,9 @@ import tick from "../../assets/img/tick.png";
 import nui from "../../assets/img/maynui.png";
 import bea from "../../assets/img/beautiful.png";
 import nui2 from "../../assets/img/anhnui2.png";
+
 import { useInView } from "react-intersection-observer";
+import Lazyload from "../../features/lazyload";
 
 const Section2: React.FC = () => {
   const { ref, inView } = useInView({
@@ -20,7 +22,7 @@ const Section2: React.FC = () => {
       <div className="background-about relative">
         <div className="bg-filter-about"></div>
         <div className="about-content z-10">
-          <img src={Logo} className="w-28 h-28 logo-about" alt="Logo" />
+          <Lazyload src={Logo} className="w-28 h-28 logo-about" alt="Logo" />
           <h2 className="max-w-[860px]">
             Hong Hao Travel is a travel company in Ha Giang, we specialize in
             organizing unforgettable tours to explore Ha Giang loop but still
@@ -40,7 +42,7 @@ const Section2: React.FC = () => {
         <div className="header-detail z-10">
           <div className="center-content">
             <div className="text-detail">EXPLORE YOUR JOURNEY WITH US</div>
-            <img src={ctadown} className="cta-down" alt="CTA Down" />
+            <Lazyload src={ctadown} className="cta-down" alt="CTA Down" />
           </div>
         </div>
         <div className="content-section">
@@ -55,23 +57,23 @@ const Section2: React.FC = () => {
               </p>
               <div className="tick-detail">
                 <div className="USP">
-                  <img src={tick} alt="Tick Icon" />
+                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Tours accommodate a maximum of 10 guests</p>
                 </div>
                 <div className="USP">
-                  <img src={tick} alt="Tick Icon" />
+                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Flexible cancellation policy</p>
                 </div>
                 <div className="USP">
-                  <img src={tick} alt="Tick Icon" />
+                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Book now, pay later</p>
                 </div>
                 <div className="USP">
-                  <img src={tick} alt="Tick Icon" />
+                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Fluent English-speaking guides</p>
                 </div>
                 <div className="USP">
-                  <img src={tick} alt="Tick Icon" />
+                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Creating job opportunities for the Vietnamese community</p>
                 </div>
               </div>
@@ -106,16 +108,20 @@ const Section2: React.FC = () => {
             </div>
           </div>
           <div ref={ref} className={`image-section ${inView ? "active" : ""}`}>
-            <img src={nui} alt="Journey Image" className="z-10" />
+            <Lazyload src={nui} alt="Journey Image" className="z-10" />
           </div>
         </div>
         <div className="content-video">
-          <div className="title-video z-10 relative">
-            <p className="welcome">WELCOME TO</p>
-            <h2 className="naturally">HA GIANG NATURALLY</h2>
-            <img className="beautiful absolute top-1/2" src={bea} />
+          <div className="title-video z-20 relative">
+            <p className="welcome ">WELCOME TO</p>
+            <h2 className="naturally ">HA GIANG NATURALLY</h2>
+            <Lazyload
+              src={bea}
+              alt="Beautiful Image"
+              className="beautiful absolute top-1/2"
+            />
           </div>
-          <img src={nui2} className="video-detail z-10" />
+          <Lazyload src={nui2} alt="Nui Detail" className="video-detail z-10" />
         </div>
       </div>
     </div>
