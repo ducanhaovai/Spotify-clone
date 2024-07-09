@@ -1,36 +1,71 @@
-import React from "react";
+import { useEffect } from "react";
+import "../../assets/css/section-1.css";
 import Logo from "../../assets/Logo.png";
 
 interface Props {
   isOpen: boolean;
-  onClose: () => void; // Hàm để đóng menu
+  onClose: () => void;
 }
+const Menu = ({ isOpen, onClose }: Props) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
 
-const Menu: React.FC<Props> = ({ isOpen, onClose }) => {
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   return (
-    <div className={`menu-container ${isOpen ? "open" : ""}`}>
-      <div className="menu-selection">
-        <div className="logo">
-          <img src={Logo} alt="Logo" />
+    <div className={`menu ${isOpen ? "open" : ""}`}>
+      <div className="menu-left ">
+        <div className="bg-filter-menu"></div>
+        <div className="menu-content z-10">
+          <div className="menu-logo">
+            <img src={Logo} alt="Logo" className="h-12 z-10" />
+          </div>
+          <div className="menu-items">
+            <ul className="menu-list">
+              <li className="menu-item">Home</li>
+              <div className="menu-divider"></div>
+              <li className="menu-item">About</li>
+              <div className="menu-divider"></div>
+              <li className="menu-item">Tours</li>
+              <div className="menu-divider"></div>
+              <li className="menu-item">Activity</li>
+              <div className="menu-divider"></div>
+              <li className="menu-item">Destination</li>
+              <div className="menu-divider"></div>
+              <li className="menu-item">Blog</li>
+              <div className="menu-divider"></div>
+              <li className="menu-item">FAQ</li>
+              <div className="menu-divider"></div>
+              <li className="menu-item">Contact</li>
+            </ul>
+          </div>
         </div>
-        <ul className="menu-items">
-          <li>
-            <a href="#">Menu Item 1</a>
-          </li>
-          <li>
-            <a href="#">Menu Item 2</a>
-          </li>
-          <li>
-            <a href="#">Menu Item 3</a>
-          </li>
-        </ul>
       </div>
-
-      <div className="image-section">
-        <img src="path/to/image.jpg" alt="Image" />
-        <button className="close-btn" onClick={onClose}>
-          Close
-        </button>
+      <div className="menu-right">
+        <div className="menu-close button-close " onClick={onClose}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
+              stroke="#A9A9A9"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   );

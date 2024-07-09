@@ -9,6 +9,125 @@
 }
 
 
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 642px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    border-radius: 0px 0px 24px 24px;
+}
+
+.menu.open {
+    transform: translateY(0);
+    z-index: 1000;
+}
+
+.menu-left,
+.menu-right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.menu-left {
+    background:
+        url(../img/bg4.png)#122718 no-repeat center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 24px;
+    padding-left: 80px;
+
+}
+
+.menu-right {
+    background-image: url("../../assets/img/bg4.png");
+    /* Ảnh nền của menu right */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.menu-logo {
+    margin-bottom: 20px;
+    /* Khoảng cách giữa logo và menu items */
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 71px;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: var(--greyscaletext-0, #FFF);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    display: flex;
+
+
+}
+
+.menu-divider {
+    width: 100%;
+    height: 1px;
+    opacity: 0.2;
+    background: #fff;
+    margin: 8px 0;
+
+}
+
+.button-close {
+    position: absolute;
+    top: 20px;
+    /* Điều chỉnh khoảng cách từ top theo ý muốn */
+    right: 20px;
+    /* Điều chỉnh khoảng cách từ right theo ý muốn */
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .menu-left,
+    .menu-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-right {
+        display: none;
+        /* Ẩn menu right trên các thiết bị nhỏ hơn 768px */
+    }
+}
+
+
 .hidden {
     opacity: 0;
     visibility: hidden;
@@ -25,6 +144,17 @@
 .bg-filter {
     background-color: #0f492bd7;
     height: 100vh;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-filter-menu {
+    background-color: #122718f3;
+    height: 100%;
     z-index: 1;
     width: 100%;
     position: absolute;
@@ -70,6 +200,16 @@
     width: 485px;
     height: 521px;
 
+}
+
+
+.bg-image img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.bg-image img.active {
+    opacity: 1;
 }
 
 
