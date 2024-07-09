@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "../../assets/css/section-1.css";
 import Logo from "../../assets/Logo.png";
-import bg2 from "../../assets/img/bg4.png";
+
 interface Props {
   isOpen: boolean;
   onClose: () => void;
