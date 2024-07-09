@@ -1,0 +1,146 @@
+.section3-container {
+    display: flex;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.map-container {
+    position: sticky;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.map {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 468px;
+    /* Adjust these as necessary */
+    max-height: 450px;
+    /* Adjust these as necessary */
+}
+
+.cards-container {
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 104px;
+    padding-top: 53px;
+    max-height: 100vh;
+}
+
+.cards-container .card img {
+    border-radius: 24px;
+}
+
+.map-container h2 {
+    color: var(--greyscaletext-80-main, #262626);
+    font-family: "Londrina Solid";
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 100%;
+}
+
+.amenities {
+    position: absolute;
+    top: 58%;
+    padding-left: 24px;
+    display: flex;
+    width: 543px;
+    padding: 0px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.amenities h2 {
+    color: var(--greyscaletext-0, #FFF);
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.amenities li {
+    color: var(--greyscaletext-0, #FFF);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.amenities li span {
+    color: var(--greyscaletext-5, #F1F1F1);
+    font-family: "Trip Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+}
+
+.price {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    color: var(--greyscaletext-0, #FFF);
+    text-align: right;
+    font-family: "Trip Sans";
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.price .to {
+    color: #FFF;
+    text-align: right;
+    font-family: "Trip Sans";
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    opacity: 0.6;
+}
+
+.tag {
+    position: absolute;
+    left: 70%;
+    top: 4%;
+    display: inline-flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(2px);
+}
+
+.tag span {
+    width: 114px;
+    height: 18px;
+    color: var(--greyscaletext-0, #FFF);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    padding: 0.112px 0px 0.109px 0px;
+}
