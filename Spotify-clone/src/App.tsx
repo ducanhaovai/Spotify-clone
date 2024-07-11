@@ -6,9 +6,8 @@ import Section3 from "./Layout/Section3";
 
 import Section5 from "./Layout/Section 5";
 import Section4 from "./Layout/Section 4";
-
-const Section1 = lazy(() => import("./Layout/Section1/index"));
-const Section2 = lazy(() => import("./Layout/Section2/index"));
+import Section1 from "./Layout/Section1";
+import Section2 from "./Layout/Section2";
 
 function App() {
   return (

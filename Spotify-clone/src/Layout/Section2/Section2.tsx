@@ -58,23 +58,23 @@ const Section2: React.FC = () => {
               </p>
               <div className="tick-detail">
                 <div className="USP">
-                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
+                  <img src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Tours accommodate a maximum of 10 guests</p>
                 </div>
                 <div className="USP">
-                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
+                  <img src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Flexible cancellation policy</p>
                 </div>
                 <div className="USP">
-                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
+                  <img src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Book now, pay later</p>
                 </div>
                 <div className="USP">
-                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
+                  <img src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Fluent English-speaking guides</p>
                 </div>
                 <div className="USP">
-                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
+                  <img src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Creating job opportunities for the Vietnamese community</p>
                 </div>
               </div>
@@ -109,20 +109,20 @@ const Section2: React.FC = () => {
             </div>
           </div>
           <div ref={ref} className={`image-section ${inView ? "active" : ""}`}>
-            <Lazyload src={nui} alt="Journey Image" className="z-10" />
+            <img src={nui} alt="Journey Image" className="z-10" />
           </div>
         </div>
         <div className="content-video">
           <div className="title-video z-20 relative">
             <p className="welcome ">WELCOME TO</p>
             <h2 className="naturally ">HA GIANG NATURALLY</h2>
-            <Lazyload
+            <img
               src={bea}
               alt="Beautiful Image"
               className="beautiful absolute top-1/2"
             />
           </div>
-          <Lazyload src={nui2} alt="Nui Detail" className="video-detail z-10" />
+          <img src={nui2} alt="Nui Detail" className="video-detail z-10" />
         </div>
       </div>
     </div>
