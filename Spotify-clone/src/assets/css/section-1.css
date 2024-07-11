@@ -106,19 +106,6 @@
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-
-    .menu-left,
-    .menu-right {
-        width: 100%;
-        height: auto;
-    }
-
-    .menu-right {
-        display: none;
-    }
-}
-
 .hidden {
     opacity: 0;
     visibility: hidden;

@@ -190,11 +190,6 @@
     transition: left 3s ease-in-out;
 }
 
-@media (max-width: 768px) {
-    .image-section img {
-        display: none;
-    }
-}
 
 
 .image-section.active img {
@@ -330,9 +325,7 @@
 .video-detail:hover {
 
     transform: scale(1.5) translateY(-10%);
-    
+
 
 }
 
-
-.title-video .beautiful {}

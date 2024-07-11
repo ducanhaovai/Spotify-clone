@@ -1,5 +1,6 @@
 import React from "react";
 import "../../assets/css/section-2.css";
+import "../../assets/css/section-1.css";
 import Logo from "../../assets/img/GroupH.png";
 import CircleItem from "../../components/circle-border/CircleItem";
 import ctadown from "../../assets/img/cta-down.png";

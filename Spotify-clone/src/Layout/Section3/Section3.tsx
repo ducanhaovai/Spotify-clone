@@ -1,4 +1,5 @@
 import "../../assets/css/section-3.css";
+import "../../assets/css/section-1.css";
 import MapImage from "../../assets/img/bando.png";
 import tour1 from "../../assets/img/cardtour.png";
 import tour2 from "../../assets/img/cardtour2.png";

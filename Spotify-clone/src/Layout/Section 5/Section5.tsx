@@ -1,4 +1,5 @@
 import "../../assets/css/section-5.css";
+import "../../assets/css/section-1.css";
 import anh3 from "../../assets/img/footer1.png";
 import anh2 from "../../assets/img/footer2.png";
 import anh1 from "../../assets/img/footer3.png";

@@ -1,4 +1,5 @@
 import "../../assets/css/section-4.css";
+import "../../assets/css/section-1.css";
 import anh from "../../assets/img/ourgallery.png";
 import logo from "../../assets/img/logoxoay.png";
 import silde1 from "../../assets/img/silde1.png";

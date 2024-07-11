@@ -28,25 +28,18 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script>
-    // Reset zoom level on resize
     window.addEventListener('resize', function () {
       document.body.style.zoom = "100%";
     });
-
-    // Prevent zooming with keyboard shortcuts
     document.addEventListener('keydown', function (event) {
       if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '-' || event.key === '0')) {
         event.preventDefault();
       }
     });
-
-    // Prevent zooming with touch gestures
     document.addEventListener('gesturestart', function (e) {
       e.preventDefault();
       document.body.style.zoom = "100%";
     });
-
-    // Prevent zooming with the mouse wheel
     document.addEventListener('wheel', function (e) {
       if (e.ctrlKey) {
         e.preventDefault();
