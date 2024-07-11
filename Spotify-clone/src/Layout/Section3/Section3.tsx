@@ -121,47 +121,45 @@ const Section3 = () => {
         <img src={MapImage} alt="Map" className="map" />
       </div>
       <div className="cards-container">
-        <div className="cards">
-          {tourDestinations.map((destination) => (
-            <div key={destination.id} className="card-tour">
-              <img src={destination.img} alt="Scenic view of Ha Giang" />
-              <div className="tag">
-                <i className="fa-solid fa-clock" style={{ color: "#ff0000" }} />
-                <span>{destination.time}</span>
-              </div>
-              <ul className="amenities">
-                <h2>
-                  {destination.name}
-                  {destination.day}
-                </h2>
-                <li>
-                  <i className="fa-solid fa-house pr-2"></i>
-                  {destination.address}
-                  <span>{destination.room}</span>
-                </li>
-                <li>
-                  <i className="fa-solid fa-motorcycle pr-2"></i>
-                  {destination.bike}
-                  <span>{destination.xe}</span>
-                </li>
-                <li>
-                  <i className="fa-solid fa-user pr-2"></i>
-                  {destination.tourguid}
-                </li>
-                <li>
-                  <i className="fa-solid fa-bus pr-2"></i>
-                  {destination.transport}
-                  <span>{destination.oto}</span>
-                </li>
-              </ul>
-
-              <div className="price">
-                <span className="to">Fromto</span>
-                <span>{destination.money}</span>
-              </div>
+        {tourDestinations.map((destination) => (
+          <div key={destination.id} className="card">
+            <img src={destination.img} alt="Scenic view of Ha Giang" />
+            <div className="tag">
+              <i className="fa-solid fa-clock" style={{ color: "#ff0000" }} />
+              <span>{destination.time}</span>
             </div>
-          ))}
-        </div>
+            <ul className="amenities">
+              <h2>
+                {destination.name}
+                {destination.day}
+              </h2>
+              <li>
+                <i className="fa-solid fa-house pr-2"></i>
+                {destination.address}
+                <span>{destination.room}</span>
+              </li>
+              <li>
+                <i className="fa-solid fa-motorcycle pr-2"></i>
+                {destination.bike}
+                <span>{destination.xe}</span>
+              </li>
+              <li>
+                <i className="fa-solid fa-user pr-2"></i>
+                {destination.tourguid}
+              </li>
+              <li>
+                <i className="fa-solid fa-bus pr-2"></i>
+                {destination.transport}
+                <span>{destination.oto}</span>
+              </li>
+            </ul>
+
+            <div className="price">
+              <span className="to">Fromto</span>
+              <span>{destination.money}</span>
+            </div>
+          </div>
+        ))}
       </div>
       <div></div>
     </div>

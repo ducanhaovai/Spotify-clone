@@ -3,7 +3,7 @@
     min-height: 100vh;
     background: #fff;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .map-container {
@@ -40,14 +40,14 @@
     padding-right: 104px;
     padding-top: 53px;
     max-height: 100vh;
-    overflow: auto;
+
 }
 
-.cards-container .card-tour img {
+.cards-container .card img {
     border-radius: 24px;
 }
 
-.card-tour {
+.cards-container .card {
     border-radius: 24px;
 }
 
@@ -87,7 +87,6 @@
 
 .amenities li span {
     color: var(--greyscaletext-5, #F1F1F1);
-    font-family: "Trip Sans";
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
@@ -100,7 +99,6 @@
     left: 80%;
     color: var(--greyscaletext-0, #FFF);
     text-align: right;
-    font-family: "Trip Sans";
     font-size: 48px;
     font-weight: 800;
     line-height: 120%;
@@ -112,7 +110,6 @@
 .price .to {
     color: #FFF;
     text-align: right;
-    font-family: "Trip Sans";
     font-size: 16px;
     font-weight: 800;
     line-height: 120%;
