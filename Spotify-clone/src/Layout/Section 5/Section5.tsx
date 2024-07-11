@@ -103,7 +103,7 @@ export default function Section5() {
         <div className="horizontal-line">{HorizontalLineSVG}</div>
         <div className="weather-info">
           {month.map((item) => (
-            <div key={item.id} className="card">
+            <div key={item.id} className="card-weather">
               <p className="month">{item.month}</p>
               <p className="degree">Degree</p>
               <p className="rain">27-32</p>
