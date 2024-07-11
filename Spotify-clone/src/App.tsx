@@ -1,4 +1,4 @@
-import {  Suspense } from "react";
+import { Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";

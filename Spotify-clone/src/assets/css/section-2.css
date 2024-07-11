@@ -6,12 +6,12 @@
     background-size: 1670px 642px;
     background-position: center;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     padding: 50px;
 }
 
 .bg-filter-about {
-    background-color: #122718f3;
+    background-color: #122718e3;
     height: 100%;
     z-index: 1;
     width: 100%;
@@ -43,9 +43,19 @@
 
 .image-container {
     display: flex;
-    gap: 12px;
+    gap: 26px;
     width: 1048px;
     height: 200px;
+}
+
+.Personalization-1 {
+    display: flex;
+    gap: 26px;
+}
+
+.Personalization-2 {
+    display: flex;
+    gap: 26px;
 }
 
 .circle-border {
@@ -186,8 +196,14 @@
     position: relative;
     left: 100%;
     transition: left 3s ease-in-out;
+
 }
 
+@media (max-width: 768px) {
+    .image-section img {
+        display: none;
+    }
+}
 
 
 .image-section.active img {

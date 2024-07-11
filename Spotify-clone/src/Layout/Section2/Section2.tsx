@@ -1,6 +1,5 @@
 import React from "react";
 import "../../assets/css/section-2.css";
-import "../../assets/css/section-1.css";
 import Logo from "../../assets/img/GroupH.png";
 import CircleItem from "../../components/circle-border/CircleItem";
 import ctadown from "../../assets/img/cta-down.png";
@@ -24,17 +23,22 @@ const Section2: React.FC = () => {
         <div className="bg-filter-about"></div>
         <div className="about-content z-10">
           <Lazyload src={Logo} className="w-28 h-28 logo-about" alt="Logo" />
-          <h2 className="max-w-[860px]">
+          <h2 className="max-w-[860px] intro-content">
             Hong Hao Travel is a travel company in Ha Giang, we specialize in
             organizing unforgettable tours to explore Ha Giang loop but still
             focus on the pristine nature of nature.
           </h2>
           <div className="image-container">
-            <CircleItem text="Personalization" />
-            <CircleItem text="Personalization" />
-            <CircleItem text="Personalization" />
-            <CircleItem text="Personalization" />
-            <CircleItem text="Personalization" />
+            <div className="Personalization-1">
+              <CircleItem text="Personalization" />
+              <CircleItem text="Personalization" />
+              <CircleItem text="Personalization" />
+            </div>
+
+            <div className="Personalization-2">
+              <CircleItem text="Personalization" />
+              <CircleItem text="Personalization" />
+            </div>
           </div>
         </div>
       </div>
@@ -48,7 +52,10 @@ const Section2: React.FC = () => {
         </div>
         <div className="content-section">
           <div className="text-section z-10">
-            <h2 className="title">HONG HAO MOTORBIKE TOUR</h2>
+            <div className="title-start">
+              <p className="start-with">Start with</p>
+              <h2 className="title">HONG HAO MOTORBIKE TOUR</h2>
+            </div>
             <div className="title-detail">
               <p className="content-detail">
                 Experience the raw beauty of Hà Giang with our immersive travel
@@ -58,23 +65,23 @@ const Section2: React.FC = () => {
               </p>
               <div className="tick-detail">
                 <div className="USP">
-                  <img src={tick} alt="Tick Icon" className="tick-icon" />
+                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Tours accommodate a maximum of 10 guests</p>
                 </div>
                 <div className="USP">
-                  <img src={tick} alt="Tick Icon" className="tick-icon" />
+                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Flexible cancellation policy</p>
                 </div>
                 <div className="USP">
-                  <img src={tick} alt="Tick Icon" className="tick-icon" />
+                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Book now, pay later</p>
                 </div>
                 <div className="USP">
-                  <img src={tick} alt="Tick Icon" className="tick-icon" />
+                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Fluent English-speaking guides</p>
                 </div>
                 <div className="USP">
-                  <img src={tick} alt="Tick Icon" className="tick-icon" />
+                  <Lazyload src={tick} alt="Tick Icon" className="tick-icon" />
                   <p>Creating job opportunities for the Vietnamese community</p>
                 </div>
               </div>
@@ -86,7 +93,7 @@ const Section2: React.FC = () => {
                   width="16"
                   height="16"
                   fill="currentColor"
-                  className="bi bi-person"
+                  className="bi bi-person button-person1"
                   viewBox="0 0 16 16"
                 >
                   <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
@@ -99,7 +106,7 @@ const Section2: React.FC = () => {
                   width="16"
                   height="16"
                   fill="currentColor"
-                  className="bi bi-person"
+                  className="bi bi-person button-person2"
                   viewBox="0 0 16 16"
                 >
                   <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
@@ -109,20 +116,20 @@ const Section2: React.FC = () => {
             </div>
           </div>
           <div ref={ref} className={`image-section ${inView ? "active" : ""}`}>
-            <img src={nui} alt="Journey Image" className="z-10" />
+            <Lazyload src={nui} alt="Journey Image" className="z-10" />
           </div>
         </div>
         <div className="content-video">
           <div className="title-video z-20 relative">
             <p className="welcome ">WELCOME TO</p>
             <h2 className="naturally ">HA GIANG NATURALLY</h2>
-            <img
+            <Lazyload
               src={bea}
               alt="Beautiful Image"
-              className="beautiful absolute top-1/2"
+              className="beautiful absolute "
             />
           </div>
-          <img src={nui2} alt="Nui Detail" className="video-detail z-10" />
+          <Lazyload src={nui2} alt="Nui Detail" className="video-detail z-10" />
         </div>
       </div>
     </div>

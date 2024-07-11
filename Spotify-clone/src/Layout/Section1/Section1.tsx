@@ -5,6 +5,7 @@ import Booking from "../../components/Booking";
 import CTA from "../../components/CTA";
 import Menu from "../../components/Menu";
 
+// Import các ảnh bạn muốn sử dụng cho slideshow
 import Anh1 from "../../assets/img/MAP.png";
 import Anh2 from "../../assets/img/MAP2.png";
 import Anh3 from "../../assets/img/MAP3.png";
@@ -56,7 +57,7 @@ export default function Section1() {
     <>
       <div className="homepageimg relative w-full h-788px max-h-[788px] max-w-100rem section1">
         <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-        <div className="flex py-6 px-20 justify-between items-center ">
+        <div className="flex py-6 px-20 justify-between items-center header-nav">
           <img src={Logo} alt="xe" className=" h-12 z-10" />
           <div
             className="flex pt-2 pr-4 pb-2 pl-2 justify-end gap-2 rounded-3xl bg-orange-500 z-10"
@@ -91,7 +92,7 @@ export default function Section1() {
             </h6>
           </div>
         </div>
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 pb-8 z-10">
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 pb-8 z-10 booking-home">
           <Booking />
         </div>
         <div className="bg-filter"></div>
@@ -107,7 +108,7 @@ export default function Section1() {
               }}
             />
           ))}
-          <div className="absolute inset-0 flex justify-center items-center">
+          <div className="absolute inset-0 flex justify-center items-center welcome">
             <div className="inline-flex flex-col items-center gap-3 ml-16">
               <p className="z-20 text-map ">GET READY</p>
               <p className="text-change block z-10">
@@ -123,7 +124,7 @@ export default function Section1() {
         <div className="absolute bottom-60 right-20 pb-8 pr-8 z-10">
           <CTA />
         </div>
-        <p className="absolute text-left-homepage left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-90 pb-8 z-10">
+        <p className="absolute text-left-homepage left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-90 pb-8 z-10 title-brand">
           Hong Hao Travel
         </p>
       </div>
