@@ -5,9 +5,123 @@
 .section1 {
     position: sticky;
     top: 0;
+<<<<<<< Updated upstream
+
+=======
+    z-index: 1;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    border-radius: 0px 0px 24px 24px;
+
+
 
 }
 
+.menu.open {
+    transform: translateY(0);
+    z-index: 1000;
+}
+
+.menu-left,
+.menu-right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.menu-left {
+    background: url(../img/bg4.png) #122718 no-repeat center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 80px;
+    box-sizing: border-box;
+
+}
+
+.menu-right {
+    background-image: url("../../assets/img/bg4.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.menu-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.menu-logo {
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: var(--greyscaletext-0, #FFF);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    display: flex;
+}
+
+.menu-divider {
+    width: 100%;
+    height: 1px;
+    opacity: 0.2;
+    background: #fff;
+    margin: 8px 0;
+}
+
+.button-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .menu-left,
+    .menu-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-right {
+        display: none;
+    }
+>>>>>>> Stashed changes
+}
 
 .hidden {
     opacity: 0;
@@ -16,6 +130,7 @@
 
 .homepageimg {
     width: 100%;
+<<<<<<< Updated upstream
     height: 100vh;
     background:
         url(../img/anhdoinui.png) lightgray -37.28px -1532.253px / 103.142% 314.078% no-repeat;
@@ -25,6 +140,26 @@
 .bg-filter {
     background-color: #0f492bd7;
     height: 100vh;
+=======
+    height: 715px;
+    background: url(../img/anhdoinui.png) lightgray -37.28px -1532.253px / 103.142% 314.078% no-repeat;
+}
+
+.bg-filter {
+    background-color: #0f492bd7;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-filter-menu {
+    background-color: #122718f3;
+    height: 100%;
+>>>>>>> Stashed changes
     z-index: 1;
     width: 100%;
     position: absolute;
@@ -50,7 +185,6 @@
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0.06px;
-
 }
 
 .text-content {
@@ -69,9 +203,19 @@
     z-index: 3;
     width: 485px;
     height: 521px;
-
 }
 
+<<<<<<< Updated upstream
+=======
+.bg-image img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.bg-image img.active {
+    opacity: 1;
+}
+>>>>>>> Stashed changes
 
 .text-m-booking {
     color: var(--Gray-Scale-0, #FFF);
@@ -80,8 +224,6 @@
     font-style: normal;
     font-weight: bold;
     line-height: 120%;
-
-
 }
 
 .text-b-booking {
@@ -103,8 +245,6 @@
     background-color: var(--Gray-Scale-5, #D9D9D9);
     padding-left: 24px;
     padding-right: 24px;
-
-
 }
 
 .text-left-homepage {
@@ -134,9 +274,7 @@
     z-index: 1;
     left: 19%;
     bottom: 8%;
-
 }
-
 
 .cta_layout {
     position: absolute;
@@ -144,24 +282,20 @@
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    gap: 16px
+    gap: 16px;
 }
 
 .whatsapp-icon-container {
     position: relative;
     width: 55px;
     height: 55px;
-
 }
-
-
 
 .icon-whatsapp-border {
     position: absolute;
     width: 100%;
     height: 100%;
     bottom: 0%;
-
     border-radius: 100px;
     background: rgba(255, 255, 255, 0.818);
     filter: blur(0px);
@@ -205,8 +339,6 @@
     white-space: normal;
 }
 
-
-
 .button-booking {
     border-radius: 8px;
     background: var(--Orange-Normal, #E64827);
@@ -237,8 +369,6 @@
     box-shadow: none;
     transform: translateY(0);
 }
-
-
 
 @keyframes whatsapp-animation {
     0% {
