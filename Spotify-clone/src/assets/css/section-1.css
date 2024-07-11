@@ -5,9 +5,6 @@
 .section1 {
     position: sticky;
     top: 0;
-<<<<<<< Updated upstream
-
-=======
     z-index: 1;
 }
 
@@ -120,7 +117,6 @@
     .menu-right {
         display: none;
     }
->>>>>>> Stashed changes
 }
 
 .hidden {
@@ -130,20 +126,12 @@
 
 .homepageimg {
     width: 100%;
-<<<<<<< Updated upstream
     height: 100vh;
     background:
         url(../img/anhdoinui.png) lightgray -37.28px -1532.253px / 103.142% 314.078% no-repeat;
 }
 
 
-.bg-filter {
-    background-color: #0f492bd7;
-    height: 100vh;
-=======
-    height: 715px;
-    background: url(../img/anhdoinui.png) lightgray -37.28px -1532.253px / 103.142% 314.078% no-repeat;
-}
 
 .bg-filter {
     background-color: #0f492bd7;
@@ -159,7 +147,6 @@
 .bg-filter-menu {
     background-color: #122718f3;
     height: 100%;
->>>>>>> Stashed changes
     z-index: 1;
     width: 100%;
     position: absolute;
@@ -205,17 +192,15 @@
     height: 521px;
 }
 
-<<<<<<< Updated upstream
-=======
 .bg-image img {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s ease-in-out;
 }
 
 .bg-image img.active {
     opacity: 1;
 }
->>>>>>> Stashed changes
+
 
 .text-m-booking {
     color: var(--Gray-Scale-0, #FFF);
