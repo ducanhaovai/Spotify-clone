@@ -62,7 +62,7 @@ const Menu = ({ isOpen, onClose }: Props) => {
               stroke="#A9A9A9"
               strokeWidth="2"
               strokeLinecap="round"
-              stroke-linejoin="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
