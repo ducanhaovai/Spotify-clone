@@ -60,7 +60,7 @@ export default function Section1() {
         <div className="flex py-6 px-20 justify-between items-center header-nav">
           <img src={Logo} alt="xe" className=" h-12 z-10" />
           <div
-            className="flex pt-2 pr-4 pb-2 pl-2 justify-end gap-2 rounded-3xl bg-orange-500 z-10"
+            className="flex pt-2 pr-4 pb-2 pl-2 justify-end gap-2 rounded-3xl z-10 button-menu"
             onClick={toggleMenu}
           >
             <svg
@@ -108,7 +108,7 @@ export default function Section1() {
               }}
             />
           ))}
-          <div className="absolute inset-0 flex justify-center items-center welcome">
+          <div className="absolute inset-0 flex justify-center items-center">
             <div className="inline-flex flex-col items-center gap-3 ml-16">
               <p className="z-20 text-map ">GET READY</p>
               <p className="text-change block z-10">
